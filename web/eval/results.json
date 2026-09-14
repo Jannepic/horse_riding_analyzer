@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "cases": 9,
+    "answerableCases": 7,
+    "faithfulness": 0.8230519480519481,
+    "answerRelevancy": 0.6866697722208823,
+    "contextPrecision": 0.6912698412698414,
+    "contextRecall": 0.9285714285714286,
+    "refusalAccuracy": 1
+  },
+  "rows": [
+    {
+      "id": "canter-footfall",
+      "answerable": true,
+      "faithfulness": 1,
+      "answerRelevancy": 0.748859384838671,
+      "contextPrecision": 1,
+      "contextRecall": 1,
+      "unsupported": []
+    },
+    {
+      "id": "collected-canter",
+      "answerable": true,
+      "faithfulness": 0.7272727272727273,
+      "answerRelevancy": 0.7541980857181411,
+      "contextPrecision": 0.5,
+      "contextRecall": 1,
+      "unsupported": [
+        "Im versammelten Galopp greifen die Hinterbeine des Pferdes weit unter den Schwerpunkt. — Der Kontext spricht von 'fleißig unter den Schwerpunkt' bzw. 'under Horse's body', nicht jedoch von 'weit'.",
+        "Die Lastaufnahme der Hinterhand entlastet im versammelten Galopp die Vorhand und verleiht den Schultern eine größere Beweglichkeit. — Eine Entlastung der Vorhand wird im Kontext nicht explizit erwähnt.",
+        "Die Galoppsprünge im versammelten Galopp verlieren weder an Takt bzw. Regelmäßigkeit, Elastizität, Kadenz noch an Geschmeidigkeit. — Der Text nennt 'without losing rhythm, elasticity and cadence', erwähnt Geschmeidigkeit hierbei jedoch nicht."
+      ]
+    },
+    {
+      "id": "walk-rhythm",
+      "answerable": true,
+      "faithfulness": 1,
+      "answerRelevancy": 0.6277135676256242,
+      "contextPrecision": 0.5,
+      "contextRecall": 1,
+      "unsupported": []
+    },
+    {
+      "id": "canter-faults",
+      "answerable": true,
+      "faithfulness": 1,
+      "answerRelevancy": 0.6487008540541126,
+      "contextPrecision": 0.3333333333333333,
+      "contextRecall": 0.5,
+      "unsupported": []
+    },
+    {
+      "id": "shoulder-in-purpose",
+      "answerable": true,
+      "faithfulness": 0.9090909090909091,
+      "answerRelevancy": 0.5730586921859527,
+      "contextPrecision": 1,
+      "contextRecall": 1,
+      "unsupported": [
+        "Das Schulterherein verstärkt die Hankenbeugung durch eine vermehrte Beugung der Hüft- und Kniegelenke des Pferdes. — Der Begriff 'Hankenbeugung' wird im Text nicht genannt; erwähnt wird lediglich die Beugung von Hüft- und Kniegelenken."
+      ]
+    },
+    {
+      "id": "training-scale-elements",
+      "answerable": true,
+      "faithfulness": 0.125,
+      "answerRelevancy": 0.8020724558861397,
+      "contextPrecision": 0.75,
+      "contextRecall": 1,
+      "unsupported": [
+        "Die Skala der Ausbildung wird im Englischen als Training Scale bezeichnet. — Der Text enthält zwar beide Begriffe, setzt sie jedoch nirgends explizit als Übersetzung gleich.",
+        "Das erste Element der Skala der Ausbildung ist der Takt (rhythm). — Der Text zählt Aspekte zwar in Klammern auf, bezeichnet 'rhythm' aber nicht explizit als erstes Element.",
+        "Das zweite Element der Skala der Ausbildung ist die Losgelassenheit (suppleness). — Der Text ordnet den aufgezählten Aspekten keine explizite Nummerierung als zweites Element zu.",
+        "Das dritte Element der Skala der Ausbildung ist die Anlehnung (contact). — Der Text nennt 'contact' in einer Aufzählung, definiert es jedoch nicht ausdrücklich als drittes Element.",
+        "Das vierte Element der Skala der Ausbildung ist der Schwung (impulsion). — Der Text weist den genannten Aspekten keine Ordnungszahlen als viertes Element zu.",
+        "Das fünfte Element der Skala der Ausbildung ist die Geraderichtung (straightness). — Eine explizite Bezeichnung als fünftes Element der Skala geht aus dem Text nicht hervor.",
+        "Das sechste Element der Skala der Ausbildung ist die Versammlung (collection). — Der Text führt 'collection' am Ende einer Aufzählung auf, benennt es aber nicht ausdrücklich als sechstes Element."
+      ]
+    },
+    {
+      "id": "losgelassenheit",
+      "answerable": true,
+      "faithfulness": 1,
+      "answerRelevancy": 0.6520853652375361,
+      "contextPrecision": 0.7555555555555555,
+      "contextRecall": 1,
+      "unsupported": []
+    },
+    {
+      "id": "feeding-question",
+      "answerable": false,
+      "refusedCorrectly": true
+    },
+    {
+      "id": "vet-question",
+      "answerable": false,
+      "refusedCorrectly": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/ingest/chunk.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/retrieval/keyword.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/retrieval/rrf.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/tools/scoring.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/tools/levels.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/tools/trainingLoad.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/security/safeRedirect.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/video/encodeTargets.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/video/limits.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/video/types.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/chat/turns.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/video/paths.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/chat/export.test.ts && node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON lib/i18n.test.ts",
+    "ingest": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env.local scripts/ingest.ts",
+    "eval:tools": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env.local eval/toolSelection.ts",
+    "eval:dataset": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env.local eval/buildDataset.ts",
+    "eval:rag": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env.local eval/run.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.9",
+    "@langchain/langgraph": "^1.4.12",
+    "@langchain/openai": "^1.5.10",
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.112.4",
+    "langchain": "^1.5.10",
+    "next": "16.3.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "unpdf": "^1.8.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
